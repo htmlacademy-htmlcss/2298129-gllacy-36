@@ -7,7 +7,7 @@
   <body>
     <header class="header">
       <a class="header__link link link--logo" title="Вы на главной странице">
-        <img class="img img--logo" src="img/static/logo.svg" alt="Логотип">
+        <img class="img img--logo" src="img/static/logo.svg" width="137" height="57" alt="Логотип">
       </a>
       <nav class="header__navigation-main navigation navigation-main">
         <ul class="navigation-main__list">
@@ -38,14 +38,14 @@
     </header>
     <main>
       <header class="subheader">
-        <ul class="list list--breadcrumbs">
-          <li class="list__item">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
             <a class="link" href="/">Главная</a>
           </li>
-          <li class="list__item">
+          <li class="breadcrumbs__item">
             <a class="link" title="Вы уже в каталоге">Каталог</a>
           </li>
-          <li class="list__item">
+          <li class="breadcrumbs__item">
             <a class="link" href="#">Сливочное мороженое</a>
           </li>
         </ul>
@@ -74,19 +74,32 @@
                 <div></div>
               </li>
               <li class="catalog-filter__item">
-                <label for="richness">Жирность:</label>
-                <input type="radio" name="richness" id="richness" value="0">0%
-                <input type="radio" name="richness" value="до 10">до 10%
-                <input type="radio" name="richness" value="до 30">до 30%
-                <input type="radio" name="richness" value="выше 30">выше 30%
+                <fieldset>
+                  <legend>Жирность:</legend>
+                  <input type="radio" id="richness-0" value="0">
+                  <label for="richness-0">0%</label>
+                  <input type="radio" id="richness-10" value="до 10">
+                  <label for="richness-10">до 10%</label>
+                  <input type="radio" id="richness-30" value="до 30">
+                  <label for="richness-30">до 30%</label>
+                  <input type="radio" id="richness-more-30" value="выше 30">
+                  <label for="richness-more-30">выше 30%</label>
+                </fieldset>
               </li>
               <li class="catalog-filter__item">
-                <label for="filler">Наполнители:</label>
-                <input type="checkbox" name="filler" id="filler" value="шоколадные">шоколадные
-                <input type="checkbox" name="filler" value="сахарные-посыпки">сахарные посыпки
-                <input type="checkbox" name="filler" value="фрукты">фрукты
-                <input type="checkbox" name="filler" value="сиропы 30">сиропы
-                <input type="checkbox" name="filler" value="джемы">джемы
+                <fieldset>
+                  <legend>Наполнители:</legend>
+                  <input type="checkbox" id="filler-chocolate" value="шоколадные">
+                  <label for="filler-chocolate">шоколадные</label>
+                  <input type="checkbox" id="filler-sugar-sprinkles" value="сахарные-посыпки">
+                  <label for="filler-sugar-sprinkles">сахарные посыпки</label>
+                  <input type="checkbox" id="filler-fruit" value="фрукты">
+                  <label for="filler-fruit">фрукты</label>
+                  <input type="checkbox" id="filler-syrups" value="сиропы">
+                  <label for="filler-syrups">сиропы</label>
+                  <input type="checkbox" id="filler-jams" value="джемы">
+                  <label for="filler-jams">джемы</label>
+                </fieldset>
               </li>
             </ul>
           <button class="button button--filter"  type="submit">Применить</button>
@@ -95,7 +108,7 @@
       <section>
         <ul class="goods">
           <li class="goods__item">
-            <img class="goods__picture" src="img/goods/ice-cream-raspberries.jpg" alt="Сливочное мороженое с малиновым джемом">
+            <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-raspberries.png" alt="Сливочное мороженое с малиновым джемом">
             <h3 class="title title--3">Малинка</h3>
             <p class="goods__description">Сливочное мороженое с малиновым джемом</p>
             <div class="goods__order">
@@ -104,7 +117,7 @@
             </div>
           </li>
           <li class="goods__item">
-            <img class="goods__picture" src="img/goods/ice-cream-pistachio.jpg" alt="Фисташковый пломбир с кусочками шоколада">
+            <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-pistachio.png" alt="Фисташковый пломбир с кусочками шоколада">
             <h3 class="title title--3">Фисташка</h3>
             <p class="goods__description">Фисташковый пломбир с кусочками шоколада</p>
             <div class="goods__order">
@@ -113,7 +126,7 @@
             </div>
           </li>
           <li class="goods__item">
-            <img class="goods__picture" src="img/goods/ice-cream-blueberries.jpg" alt="Крем-брюле с черничным джемом">
+            <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-blueberries.png" alt="Крем-брюле с черничным джемом">
             <h3 class="title title--3">Черника</h3>
             <p class="goods__description">Крем-брюле с черничным джемом</p>
             <div class="goods__order">
@@ -122,7 +135,7 @@
             </div>
           </li>
           <li class="goods__item">
-            <img class="goods__picture" src="img/goods/ice-cream-bubble-gum.jpg" alt="Ванильный пломбир со сладкой посыпкой">
+            <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-bubble-gum.png" alt="Ванильный пломбир со сладкой посыпкой">
             <h3 class="title title--3">Бабл-гам</h3>
             <p class="goods__description">Ванильный пломбир со сладкой посыпкой</p>
             <div class="goods__order">
@@ -131,7 +144,7 @@
             </div>
           </li>
           <li class="goods__item">
-            <img class="goods__picture" src="img/goods/ice-cream-blackberry.jpg" alt="Сливочное мороженое с ежевичным джемом">
+            <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-blackberry.png" alt="Сливочное мороженое с ежевичным джемом">
             <h3 class="title title--3">Ежевика</h3>
             <p class="goods__description">Сливочное мороженое с ежевичным джемом</p>
             <div class="goods__order">
@@ -140,7 +153,7 @@
             </div>
           </li>
           <li class="goods__item">
-            <img class="goods__picture" src="img/goods/ice-cream-banana.jpg" alt="Сливочный пломбир с банановым вкусом">
+            <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-banana.png" alt="Сливочный пломбир с банановым вкусом">
             <h3 class="title title--3">Банан</h3>
             <p class="goods__description">Сливочный пломбир с банановым вкусом</p>
             <div class="goods__order">
@@ -149,7 +162,7 @@
             </div>
           </li>
           <li>
-            <img class="goods__picture" src="img/goods/ice-cream-chocolate.jpg" alt="Классический шоколадный пломбир">
+            <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-chocolate.png" alt="Классический шоколадный пломбир">
             <h3 class="title title--3">Шоколадка</h3>
             <p class="goods__description">Классический шоколадный пломбир</p>
             <div class="goods__order">
@@ -158,7 +171,7 @@
             </div>
           </li>
           <li>
-            <img class="goods__picture" src="img/goods/ice-cream-chocolate.jpg" alt="Сливочный пломбир с клубничным вкусом">
+            <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-strawberry.png" alt="Сливочный пломбир с клубничным вкусом">
             <h3 class="title title--3">Клубничка</h3>
             <p class="goods__description">Сливочный пломбир с клубничным вкусом</p>
             <div class="goods__order">
@@ -167,16 +180,7 @@
             </div>
           </li>
           <li>
-            <img class="goods__picture" src="img/goods/ice-cream-strawberry.jpg" alt="Сливочный пломбир с клубничным вкусом">
-            <h3 class="title title--3">Клубничка</h3>
-            <p class="goods__description">Сливочный пломбир с клубничным вкусом</p>
-            <div class="goods__order">
-              <b class="goods__price">300 ₽<span class="visually-hidden">рублей</span>/кг</b>
-              <button class="goods__order button button--order"></button>
-            </div>
-          </li>
-          <li>
-            <img class="goods__picture" src="img/goods/ice-cream-lemon.jpg" alt="Освежающий лимонный сорбет">
+            <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-lemon.png" alt="Освежающий лимонный сорбет">
             <h3 class="title title--3">Лимон</h3>
             <p class="goods__description">Освежающий лимонный сорбет</p>
             <div class="goods__order">
@@ -185,7 +189,7 @@
             </div>
           </li>
           <li>
-            <img class="goods__picture" src="img/goods/ice-cream-menthol.jpg" alt="Сливочный пломбир с ментоловым сиропом">
+            <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-menthol.png" alt="Сливочный пломбир с ментоловым сиропом">
             <h3 class="title title--3">Ментол</h3>
             <p class="goods__description">Сливочный пломбир с ментоловым сиропом</p>
             <div class="goods__order">
@@ -194,7 +198,7 @@
             </div>
           </li>
           <li>
-            <img class="goods__picture" src="img/goods/ice-cream-nut.jpg" alt="Фисташковый пломбир с шоколадным сиропом">
+            <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-nut.png" alt="Фисташковый пломбир с шоколадным сиропом">
             <h3 class="title title--3">Орешек</h3>
             <p class="goods__description">Фисташковый пломбир с шоколадным сиропом</p>
             <div class="goods__order">
@@ -203,7 +207,7 @@
             </div>
           </li>
           <li>
-            <img class="goods__picture" src="img/goods/ice-cream-creme-brulee.jpg" alt="Классическое крем-брюле">
+            <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-creme-brulee.png" alt="Классическое крем-брюле">
             <h3 class="title title--3">Крем-брюле</h3>
             <p class="goods__description">Классическое крем-брюле</p>
             <div class="goods__order">
@@ -213,19 +217,25 @@
           </li>
         </ul>
         <button class="button button--default">Показать еще</button>
-        <div class="pages"></div>
+        <ul class="pagination pagination--pages">
+          <li><button class="button button--active-page">1</button></li>
+          <li><button class="button">2</button></li>
+          <li><button class="button">3</button></li>
+          <li><button class="button">4</button></li>
+          <li><button class="button">5</button></li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
       <ul class="social">
         <li class="social__item">
-          <a class="social__link link icon icon--telegram"></a>
+          <a class="social__link link social__link--telegram"></a>
         </li>
         <li class="social__item">
-          <a class="social__link link icon icon--vk"></a>
+          <a class="social__link link social__link--vk"></a>
         </li>
         <li class="social__item">
-          <a class="social__link link icon icon--vk"></a>
+          <a class="social__link link social__link--vk"></a>
         </li>
       </ul>
       <ul class="navigation navigation--sub">
@@ -244,9 +254,9 @@
       </ul>
       <div>
         <a class="link">
-          <img src="img/static/logo-htmlacademy.svg" alt="htmlAcademy">
+          <img src="img/static/logo-htmlacademy.svg" width="93" height="27" alt="htmlAcademy">
         </a>
-        <p class="text">Сделано в
+        <p>Сделано в
           <a class="link" href="https://htmlacademy.ru/" title="htmlAcademy сайт">.html academy</a>
           © 2021
         </p>
