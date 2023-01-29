@@ -76,28 +76,28 @@
               <li class="catalog-filter__item">
                 <fieldset>
                   <legend>Жирность:</legend>
-                  <input type="radio" id="richness-0" value="0">
+                  <input type="radio" name="richness" id="richness-0" value="0">
                   <label for="richness-0">0%</label>
-                  <input type="radio" id="richness-10" value="до 10">
+                  <input type="radio" name="richness" id="richness-10" value="до 10">
                   <label for="richness-10">до 10%</label>
-                  <input type="radio" id="richness-30" value="до 30">
+                  <input type="radio" name="richness" id="richness-30" value="до 30">
                   <label for="richness-30">до 30%</label>
-                  <input type="radio" id="richness-more-30" value="выше 30">
+                  <input type="radio" name="richness" id="richness-more-30" value="выше 30">
                   <label for="richness-more-30">выше 30%</label>
                 </fieldset>
               </li>
               <li class="catalog-filter__item">
                 <fieldset>
                   <legend>Наполнители:</legend>
-                  <input type="checkbox" id="filler-chocolate" value="шоколадные">
+                  <input type="checkbox" name="filler" id="filler-chocolate" value="шоколадные">
                   <label for="filler-chocolate">шоколадные</label>
-                  <input type="checkbox" id="filler-sugar-sprinkles" value="сахарные-посыпки">
+                  <input type="checkbox" name="filler" id="filler-sugar-sprinkles" value="сахарные-посыпки">
                   <label for="filler-sugar-sprinkles">сахарные посыпки</label>
-                  <input type="checkbox" id="filler-fruit" value="фрукты">
+                  <input type="checkbox" name="filler" id="filler-fruit" value="фрукты">
                   <label for="filler-fruit">фрукты</label>
-                  <input type="checkbox" id="filler-syrups" value="сиропы">
+                  <input type="checkbox" name="filler" id="filler-syrups" value="сиропы">
                   <label for="filler-syrups">сиропы</label>
-                  <input type="checkbox" id="filler-jams" value="джемы">
+                  <input type="checkbox" name="filler" id="filler-jams" value="джемы">
                   <label for="filler-jams">джемы</label>
                 </fieldset>
               </li>
@@ -218,11 +218,11 @@
         </ul>
         <button class="button button--default">Показать еще</button>
         <ul class="pagination pagination--pages">
-          <li><button class="button button--active-page">1</button></li>
-          <li><button class="button">2</button></li>
-          <li><button class="button">3</button></li>
-          <li><button class="button">4</button></li>
-          <li><button class="button">5</button></li>
+          <li><link class="link link--page-number js-active-page" title="Вы находитесь на этой странице">1</link></li>
+          <li><link class="link link--page-number" href="#">2</link></li>
+          <li><link class="link link--page-number" href="#">3</link></li>
+          <li><link class="link link--page-number" href="#">4</link></li>
+          <li><link class="link link--page-number" href="#">5</link></li>
         </ul>
       </section>
     </main>
