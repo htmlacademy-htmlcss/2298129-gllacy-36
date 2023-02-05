@@ -2,11 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
     <header class="header">
-      <a class="header__link link link--logo" title="Вы на главной странице">
+      <a class="header__link link link--logo" href="index.html">
         <img class="img img--logo" src="img/static/logo.svg" width="137" height="57" alt="Логотип">
       </a>
       <nav class="header__navigation-main navigation navigation-main">
@@ -23,16 +25,16 @@
           </li>
         </ul>
       </nav>
-      <a class="header__link-contact link" href="tel:+78005558628" title="Основной номер телефона">+7 800 555-86-28</a>
+      <a class="header__link-contact link link--accent" href="tel:+78005558628" title="Основной номер телефона">+7 800 555-86-28</a>
       <ul class="header__navigation-user navigation-user">
         <li class="navigation-user__item">
-          <button class="navigation-user__button button button--search"></button>
+          <button class="navigation-user__button button button--third button--search"></button>
         </li>
         <li class="navigation-user__item">
-          <button class="navigation-user__button button button--login">Вход</button>
+          <button class="navigation-user__button button button--third button--login">Вход</button>
         </li>
         <li class="navigation-user__item">
-          <button class="navigation-user__button button button--basket"></button>
+          <button class="navigation-user__button button button--third button--basket">2 товара</button>
         </li>
       </ul>
     </header>
@@ -40,13 +42,13 @@
       <header class="subheader">
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item">
-            <a class="link" href="/">Главная</a>
+            <a class="link link--breadcrumbs" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="link" title="Вы уже в каталоге">Каталог</a>
+            <a class="link link--breadcrumbs" title="Вы уже в каталоге">Каталог</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="link" href="#">Сливочное мороженое</a>
+            <a class="link link--breadcrumbs" href="#">Сливочное мороженое</a>
           </li>
         </ul>
         <h1 class="title title--1">Сливочное мороженое</h1>
@@ -54,7 +56,7 @@
       <section>
         <h2 class="visually-hidden">Товоры по фильтру</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <ul class="catalog-filter__list list">
+            <ul class="catalog-filter__list list text text--mini text--mini--accent">
               <li class="catalog-filter__item">
                 <label for="sort">Сортировка</label>
                 <select id="sort">
@@ -112,7 +114,7 @@
             <h3 class="title title--3">Малинка</h3>
             <p class="goods__description">Сливочное мороженое с малиновым джемом</p>
             <div class="goods__order">
-              <b class="goods__price">310 ₽<span class="visually-hidden">рублей</span>/кг</b>
+              <b class="goods__price text text--price">310 ₽<span class="visually-hidden">рублей</span>/кг</b>
               <button class="goods__order button button--order"></button>
             </div>
           </li>
@@ -121,7 +123,7 @@
             <h3 class="title title--3">Фисташка</h3>
             <p class="goods__description">Фисташковый пломбир с кусочками шоколада</p>
             <div class="goods__order">
-              <b class="goods__price">340 ₽<span class="visually-hidden">рублей</span>/кг</b>
+              <b class="goods__price text text--price">340 ₽<span class="visually-hidden">рублей</span>/кг</b>
               <button class="goods__order button button--order"></button>
             </div>
           </li>
@@ -130,7 +132,7 @@
             <h3 class="title title--3">Черника</h3>
             <p class="goods__description">Крем-брюле с черничным джемом</p>
             <div class="goods__order">
-              <b class="goods__price">330 ₽<span class="visually-hidden">рублей</span>/кг</b>
+              <b class="goods__price text text--price">330 ₽<span class="visually-hidden">рублей</span>/кг</b>
               <button class="goods__order button button--order"></button>
             </div>
           </li>
@@ -139,7 +141,7 @@
             <h3 class="title title--3">Бабл-гам</h3>
             <p class="goods__description">Ванильный пломбир со сладкой посыпкой</p>
             <div class="goods__order">
-              <b class="goods__price">320 ₽<span class="visually-hidden">рублей</span>/кг</b>
+              <b class="goods__price text text--price">320 ₽<span class="visually-hidden">рублей</span>/кг</b>
               <button class="goods__order button button--order"></button>
             </div>
           </li>
@@ -148,7 +150,7 @@
             <h3 class="title title--3">Ежевика</h3>
             <p class="goods__description">Сливочное мороженое с ежевичным джемом</p>
             <div class="goods__order">
-              <b class="goods__price">330 ₽<span class="visually-hidden">рублей</span>/кг</b>
+              <b class="goods__price text text--price">330 ₽<span class="visually-hidden">рублей</span>/кг</b>
               <button class="goods__order button button--order"></button>
             </div>
           </li>
@@ -157,66 +159,66 @@
             <h3 class="title title--3">Банан</h3>
             <p class="goods__description">Сливочный пломбир с банановым вкусом</p>
             <div class="goods__order">
-              <b class="goods__price">340 ₽<span class="visually-hidden">рублей</span>/кг</b>
+              <b class="goods__price text text--price">340 ₽<span class="visually-hidden">рублей</span>/кг</b>
               <button class="goods__order button button--order"></button>
             </div>
           </li>
-          <li>
+          <li class="goods__item">
             <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-chocolate.jpg" alt="Классический шоколадный пломбир">
             <h3 class="title title--3">Шоколадка</h3>
             <p class="goods__description">Классический шоколадный пломбир</p>
             <div class="goods__order">
-              <b class="goods__price">270 ₽<span class="visually-hidden">рублей</span>/кг</b>
+              <b class="goods__price text text--price">270 ₽<span class="visually-hidden">рублей</span>/кг</b>
               <button class="goods__order button button--order"></button>
             </div>
           </li>
-          <li>
+          <li class="goods__item">
             <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-strawberry.jpg" alt="Сливочный пломбир с клубничным вкусом">
             <h3 class="title title--3">Клубничка</h3>
             <p class="goods__description">Сливочный пломбир с клубничным вкусом</p>
             <div class="goods__order">
-              <b class="goods__price">300 ₽<span class="visually-hidden">рублей</span>/кг</b>
+              <b class="goods__price text text--price">300 ₽<span class="visually-hidden">рублей</span>/кг</b>
               <button class="goods__order button button--order"></button>
             </div>
           </li>
-          <li>
+          <li class="goods__item">
             <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-lemon.jpg" alt="Освежающий лимонный сорбет">
             <h3 class="title title--3">Лимон</h3>
             <p class="goods__description">Освежающий лимонный сорбет</p>
             <div class="goods__order">
-              <b class="goods__price">310 ₽<span class="visually-hidden">рублей</span>/кг</b>
+              <b class="goods__price text text--price">310 ₽<span class="visually-hidden">рублей</span>/кг</b>
               <button class="goods__order button button--order"></button>
             </div>
           </li>
-          <li>
+          <li class="goods__item">
             <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-menthol.jpg" alt="Сливочный пломбир с ментоловым сиропом">
             <h3 class="title title--3">Ментол</h3>
             <p class="goods__description">Сливочный пломбир с ментоловым сиропом</p>
             <div class="goods__order">
-              <b class="goods__price">320 ₽<span class="visually-hidden">рублей</span>/кг</b>
+              <b class="goods__price text text--price">320 ₽<span class="visually-hidden">рублей</span>/кг</b>
               <button class="goods__order button button--order"></button>
             </div>
           </li>
-          <li>
+          <li class="goods__item">
             <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-nut.jpg" alt="Фисташковый пломбир с шоколадным сиропом">
             <h3 class="title title--3">Орешек</h3>
             <p class="goods__description">Фисташковый пломбир с шоколадным сиропом</p>
             <div class="goods__order">
-              <b class="goods__price">360 ₽<span class="visually-hidden">рублей</span>/кг</b>
+              <b class="goods__price text text--price">360 ₽<span class="visually-hidden">рублей</span>/кг</b>
               <button class="goods__order button button--order"></button>
             </div>
           </li>
-          <li>
+          <li class="goods__item">
             <img class="goods__picture" width="168" height="168" src="img/goods/ice-cream-creme-brulee.jpg" alt="Классическое крем-брюле">
             <h3 class="title title--3">Крем-брюле</h3>
             <p class="goods__description">Классическое крем-брюле</p>
             <div class="goods__order">
-              <b class="goods__price">280 ₽<span class="visually-hidden">рублей</span>/кг</b>
+              <b class="goods__price text text--price">280 ₽<span class="visually-hidden">рублей</span>/кг</b>
               <button class="goods__order button button--order"></button>
             </div>
           </li>
         </ul>
-        <button class="button button--default">Показать еще</button>
+        <button class="button">Показать еще</button>
         <ul class="pagination pagination--pages">
           <li><a class="link link--page-number js-active-page" title="Вы находитесь на этой странице">1</a></li>
           <li><a class="link link--page-number" href="#">2</a></li>
@@ -240,24 +242,24 @@
       </ul>
       <ul class="navigation navigation--sub">
         <li class="navigation__item">
-          <a class="link" href="#">Для поставщиков</a>
+          <a class="link link--cute" href="#">Для поставщиков</a>
         </li>
         <li class="navigation__item">
-          <a class="link" href="#">Наши документы</a>
+          <a class="link link--cute" href="#">Наши документы</a>
         </li>
         <li class="navigation__item">
-          <a class="link" href="#">О производстве</a>
+          <a class="link link--cute" href="#">О производстве</a>
         </li>
         <li class="navigation__item">
-          <a class="link" href="#">Экологические стандарты</a>
+          <a class="link link--cute" href="#">Экологические стандарты</a>
         </li>
       </ul>
       <div>
         <a class="link">
           <img src="img/static/logo-htmlacademy.svg" width="93" height="27" alt="htmlAcademy">
         </a>
-        <p>Сделано в
-          <a class="link" href="https://htmlacademy.ru/" title="htmlAcademy сайт">.html academy</a>
+        <p class="text text--author">Сделано в
+          <a class="link link--underline" href="https://htmlacademy.ru/" title="htmlAcademy сайт">.html academy</a>
           © 2021
         </p>
       </div>
