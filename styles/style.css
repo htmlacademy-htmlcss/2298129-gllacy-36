@@ -23,7 +23,7 @@
 }
 
 body {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -32,12 +32,7 @@ body {
   background: #FEAFC3;
 }
 
-button {
-  border: unset;
-  cursor: pointer;
-}
-
-input::placeholder {
+.input::placeholder {
   line-height: 20px;
   color: #B9B9B9;
 }
@@ -243,7 +238,7 @@ input::placeholder {
   max-height: 507px;
 }
 
-.slider__img-container:before {
+.slider__img-container::before {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -251,7 +246,7 @@ input::placeholder {
   width: 100%;
   height: 61%;
   border-radius: 50%;
-  content: ' ';
+  content: " ";
   background-color: #FFCBD8;
   z-index: 1;
 }
@@ -266,9 +261,11 @@ input::placeholder {
 .slider__bullet {
   width: 12px;
   height: 12px;
+  border: unset;
   border-radius: 50%;
   background-color: #FCFCFC;
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .slider__bullet.js-active-bullet {
@@ -282,6 +279,7 @@ input::placeholder {
   border: 2px solid #FCFCFC;
   border-radius: 50%;
   background: rgba(252, 252, 252, 0.3);
+  cursor: pointer;
 }
 
 .social__item {
