@@ -32,6 +32,12 @@ body {
   background: #FEAFC3;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+}
+
 .input::placeholder {
   line-height: 20px;
   color: #B9B9B9;
@@ -189,16 +195,18 @@ body {
   list-style: none;
 }
 
-.section {
+.section .container {
   border: 1px solid transparent;
   border-radius: 16px;
 }
 
-.section--benefits {
+.section--benefits .container {
   background-color: #fff;
 }
 
-.section--order {
+.section--order .container {
+  display: flex;
+  justify-content: space-between;
   background-color: #fff;
   background-image: url("/img/static/delivery-background.jpg");
   background-size: cover;
@@ -206,7 +214,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.section--about {
+.section--about .container {
   background-image: url("/img/static/three-horns.jpg");
   background-size: cover;
   background-position: center;
@@ -297,11 +305,13 @@ body {
 }
 
 .good {
+  width: 270px;
   max-width: 270px;
   background-color: #FCFCFC;
 }
 
 .good--accent {
+  width: unset;
   max-width: unset;
   background: unset;
 }
@@ -314,7 +324,7 @@ body {
   border-radius: 8px;
 }
 
-.header {
+.header .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -378,6 +388,10 @@ body {
   display: none;
 }
 
+.section-slider {
+  position: relative;
+}
+
 .section-slider__socials {
   position: absolute;
   right: 0;
@@ -435,7 +449,7 @@ body {
   padding-left: 64px;
 }
 
-.section-blog-form {
+.section-blog-form .container {
   display: flex;
   justify-content: space-between;
 }
@@ -445,7 +459,7 @@ body {
   max-width: 570px;
 }
 
-.footer {
+.footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
