@@ -437,7 +437,7 @@ body {
 
 /* section slider */
 
-.section-slider {
+.section-slider .container {
   position: relative;
 }
 
