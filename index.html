@@ -7,7 +7,7 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-    <header class="content__header header">
+    <header class="header">
       <div class="container">
         <a class="header__link link link--logo" title="Вы на главной странице">
           <img class="img img--logo" src="img/static/logo.svg" width="137" height="57" alt="Логотип">
@@ -15,18 +15,20 @@
         <nav class="header__navigation-main navigation navigation-main">
           <ul class="navigation-main__list">
             <li class="navigation-main__item">
-              <a class="navigation-main__link link" href="catalog.html">Каталог</a>
+              <a class="navigation-main__link link link--menu-item" href="catalog.html">Каталог</a>
               <ul class="navigation-main__list dropdown-list visually-hidden"></ul>
             </li>
             <li class="navigation-main__item">
-              <a class="navigation-main__link link" href="#order">Доставка и оплата</a>
+              <a class="navigation-main__link link link--menu-item" href="#order">Доставка и оплата</a>
             </li>
             <li class="navigation-main__item">
-              <a class="navigation-main__link link" href="#about-us">О компании</a>
+              <a class="navigation-main__link link link--menu-item" href="#about-us">О компании</a>
             </li>
           </ul>
         </nav>
-        <a class="header__link-contact link link--accent" href="tel:+78005558628" title="Основной номер телефона">+7 800 555-86-28</a>
+        <div class="header__link-contact">
+          <a class="link link--accent" href="tel:+78005558628" title="Основной номер телефона">+7 800 555-86-28</a>
+        </div>
         <ul class="header__navigation-user navigation-user">
           <li class="navigation-user__item">
             <button class="navigation-user__button button button--third button--search"></button>
@@ -49,9 +51,9 @@
               <li class="slider__slide good good--accent js-active-slide">
                 <div class="good__info">
                   <a class="good__link link" href="#">
-                    <h2 class="good__title title">Нежный пломбир <br> с клубничным джемом</h2>
+                    <h2 class="slider__title title">Нежный пломбир <br> с клубничным джемом</h2>
                   </a>
-                  <p class="good__description text">
+                  <p class="slider__description text">
                     Натуральное мороженое из свежих сливок
                     и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
                   </p>
@@ -64,9 +66,9 @@
               <li class="slider__slide good good--accent">
                 <div class="good__info">
                   <a class="good__link link" href="#">
-                    <h2 class="good__title title">Сливочное мороженое со вкусом банана</h2>
+                    <h2 class="slider__title title">Сливочное мороженое со вкусом банана</h2>
                   </a>
-                  <p class="good__description text">
+                  <p class="slider__description text">
                     Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.
                   </p>
                   <button class="button">Заказать</button>
@@ -78,9 +80,9 @@
               <li class="slider__slide good good--accent">
                 <div class="good__info">
                   <a class="good__link link" href="#">
-                    <h2 class="good__title title">Карамельный пломбир с маршмеллоу</h2>
+                    <h2 class="slider__title title">Карамельный пломбир с маршмеллоу</h2>
                   </a>
-                  <p class="good__description text">
+                  <p class="slider__description text">
                     Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.
                   </p>
                   <button class="button">Заказать</button>
@@ -113,9 +115,9 @@
           </ul>
         </div>
       </section>
-      <section class="main__section section">
+      <section class="main__section section section-special-gifts">
         <div class="container">
-          <h2 class="title title--2">Заказывайте мороженое и получайте подарки!</h2>
+          <h2 class="section-special-gifts__title title title--2">Заказывайте мороженое и получайте подарки!</h2>
           <ul class="special-gifts">
             <li class="special-gifts__item special-gift special-gift--raspberries">
               <h3 class="special-gifts__title title title--3 title--3--accent">Малинка даром!</h3>
@@ -134,41 +136,41 @@
           </ul>
         </div>
       </section>
-      <section class="main__section section">
+      <section class="main__section section section-popular-goods">
         <div class="container">
-          <h2 class="title title--2">Попробуйте самые популярные вкусы нашего мороженого</h2>
+          <h2 class="section-popular-goods__title title title--2">Попробуйте самые популярные вкусы нашего мороженого</h2>
           <ul class="goods">
             <li class="goods__item good">
-              <img class="goods__picture" src="img/goods/ice-cream-raspberries.jpg" width="168" height="168" alt="Пломбир с малиновым джемом">
-              <h3 class="title title--3">Малинка</h3>
-              <p class="goods__description">Сливочное мороженое с малиновым джемом</p>
+              <img class="good__picture img" src="img/goods/ice-cream-raspberries.jpg" width="168" height="168" alt="Пломбир с малиновым джемом">
+              <h3 class="good__title title title--3">Малинка</h3>
+              <p class="good__description">Сливочное мороженое с малиновым джемом</p>
               <div class="goods__order">
                 <b class="goods__price text text--price">310 ₽<span class="visually-hidden">рублей</span>/кг</b>
                 <button class="goods__order button button--order"></button>
               </div>
             </li>
             <li class="goods__item good">
-              <img class="goods__picture" src="img/goods/ice-cream-pistachio.jpg" width="168" height="168" alt="Пломбир с кусочками шоколада">
-              <h3 class="title title--3">Фисташка</h3>
-              <p class="goods__description">Фисташковый пломбир с кусочками шоколада</p>
+              <img class="good__picture img" src="img/goods/ice-cream-pistachio.jpg" width="168" height="168" alt="Пломбир с кусочками шоколада">
+              <h3 class="good__title title title--3">Фисташка</h3>
+              <p class="good__description">Фисташковый пломбир с кусочками шоколада</p>
               <div class="goods__order">
                 <b class="goods__price text text--price">340 ₽<span class="visually-hidden">рублей</span>/кг</b>
                 <button class="goods__order button button--order"></button>
               </div>
             </li>
             <li class="goods__item good">
-              <img class="goods__picture" src="img/goods/ice-cream-blueberries.jpg" width="168" height="168" alt="Пломбир с черничным джемом">
-              <h3 class="title title--3">Черника</h3>
-              <p class="goods__description">Крем-брюле с черничным джемом</p>
+              <img class="good__picture img" src="img/goods/ice-cream-blueberries.jpg" width="168" height="168" alt="Пломбир с черничным джемом">
+              <h3 class="good__title title title--3">Черника</h3>
+              <p class="good__description">Крем-брюле с черничным джемом</p>
               <div class="goods__order">
                 <b class="goods__price text text--price">330 ₽<span class="visually-hidden">рублей</span>/кг</b>
                 <button class="goods__order button button--order"></button>
               </div>
             </li>
             <li class="goods__item good">
-              <img class="goods__picture" src="img/goods/ice-cream-bubble-gum.jpg" width="168" height="168" alt="Ванильный пломбир со сладкой посыпкой">
-              <h3 class="title title--3">Бабл-гам</h3>
-              <p class="goods__description">Ванильный пломбир со сладкой посыпкой</p>
+              <img class="good__picture img" src="img/goods/ice-cream-bubble-gum.jpg" width="168" height="168" alt="Ванильный пломбир со сладкой посыпкой">
+              <h3 class="good__title title title--3">Бабл-гам</h3>
+              <p class="good__description">Ванильный пломбир со сладкой посыпкой</p>
               <div class="goods__order">
                 <b class="goods__price text text--price">320 ₽<span class="visually-hidden">рублей</span>/кг</b>
                 <button class="goods__order button button--order"></button>
@@ -177,10 +179,10 @@
           </ul>
         </div>
       </section>
-      <section class="main__section section section--benefits">
+      <section class="main__section section section--benefits section-benefits">
         <div class="container">
           <h2 class="visually-hidden">Преимущества</h2>
-          <strong class="title title--2">
+          <strong class="section-benefits__title title title--2">
             Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес
           </strong>
           <ul class="benefits-list">
@@ -222,20 +224,18 @@
           </form>
         </div>
       </section>
-      <section class="main__section section section--order" id="order">
+      <section class="main__section section section--order section-order" id="order">
         <div class="container">
           <h2 class="visually-hidden">Доставка</h2>
-          <div>
-            <strong class="title title--2">
-              Доставка любимого мороженого на дом
-            </strong>
-            <p>
+          <div class="section-order__text">
+            <strong class="section-order__title title title--2">Доставка любимого мороженого на дом</strong>
+            <p class="section-order__description">
               Хочется полакомиться любимым десертом,  но нет времени съездить в магазин?
               Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!
             </p>
           </div>
-          <form class="form form--delivery" method="post" action="https://echo.htmlacademy.ru/">
-            <p>
+          <form class="form form--delivery delivery-form" method="post" action="https://echo.htmlacademy.ru/">
+            <p class="delivery-form__description">
               Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
             </p>
             <label class="form__label text text--bold" for="date">Дата</label>
@@ -251,16 +251,16 @@
       <section class="main__section section section--about" id="about-us">
         <div class="container">
           <h2 class="visually-hidden">О нас</h2>
-          <article class="article article--address">
+          <article class="article article--address article-about">
             <h3 class="visually-hidden">Адресс</h3>
-            <dl class="article__list list list--info">
-              <div class="article__container">
-                <dt class="list__title">Адрес главного офиса и офлайн-магазина:</dt>
-                <dd class="list__description text text--info">наб. реки Карповки,  5 лит П, Санкт-Петербург</dd>
+            <dl class="article-about__list">
+              <div class="article-about__container">
+                <dt class="article-about__title">Адрес главного офиса и офлайн-магазина:</dt>
+                <dd class="article-about__description text text--info">наб. реки Карповки,  5 лит П, Санкт-Петербург</dd>
               </div>
-              <div class="article__container">
-                <dt class="list__title">Для заказов по телефону:</dt>
-                <dd class="list__description text text--info">
+              <div class="article-about__container">
+                <dt class="article-about__title">Для заказов по телефону:</dt>
+                <dd class="article-about__description text text--info">
                   <a class="link" href="tel:+78128121212">+7 (812) 812-12-12</a>
                 </dd>
                 <dd class="text text--mini">(с <time datetime="10:00">10</time> до <time datetime="20:00">20</time> ежедневно)</dd>
@@ -284,23 +284,23 @@
             <a class="social__link link social__link--vk"></a>
           </li>
         </ul>
-        <ul class="navigation navigation--sub">
-          <li class="navigation__item">
+        <ul class="navigation navigation--sub navigation-sub">
+          <li class="navigation-sub__item">
             <a class="link link--cute" href="#">Для поставщиков</a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation-sub__item">
             <a class="link link--cute" href="#">Наши документы</a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation-sub__item">
             <a class="link link--cute" href="#">О производстве</a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation-sub__item">
             <a class="link link--cute" href="#">Экологические стандарты</a>
           </li>
         </ul>
         <div>
           <a class="link">
-            <img src="img/static/logo-htmlacademy.svg" width="93" height="27" alt="htmlAcademy">
+            <img class="img" src="img/static/logo-htmlacademy.svg" width="93" height="27" alt="htmlAcademy">
           </a>
           <p class="text text--author">Сделано в
             <a class="link link--underline" href="https://htmlacademy.ru/" title="htmlAcademy сайт">.html academy</a>
