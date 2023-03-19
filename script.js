@@ -35,4 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
       buttonUnset.classList.add('-show')
     }
   })
+
+  let buttonFeedback = document.querySelector('.js-feedback-button');
+  let formFeedback = document.querySelector('.js-feedback-form');
+  buttonFeedback.addEventListener('click', () => {
+    formFeedback.classList.add('-show-flex');
+  });
 })
