@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   linksOnDropdowns.forEach(el => {
     el.addEventListener('click', () => {
       el.classList.toggle('-active');
-      el.parentNode.querySelector('.dropdown-list').classList.toggle('-show')
+      el.parentNode.querySelector('.dropdown-list').classList.toggle('js-show')
     })
   })
 
@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', function () {
     el.addEventListener('click', () => {
       el.classList.toggle('-active');
       buttonsThird.forEach(el2 => {
-        if (el !== el2 && el2.parentNode.querySelector('.modal-block').classList.contains('-show')) {
+        if (el !== el2 && el2.parentNode.querySelector('.modal-block').classList.contains('js-show')) {
           el2.classList.remove('-active');
-          el2.parentNode.querySelector('.modal-block').classList.remove('-show')
+          el2.parentNode.querySelector('.modal-block').classList.remove('js-show')
         }
       })
-      el.parentNode.querySelector('.modal-block').classList.toggle('-show')
+      el.parentNode.querySelector('.modal-block').classList.toggle('js-show')
     })
   })
 
@@ -32,13 +32,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   searchInput.addEventListener('input', () => {
     if (searchInput.value !== '') {
-      buttonUnset.classList.add('-show')
+      buttonUnset.classList.add('js-show')
     }
   })
 
   let buttonFeedback = document.querySelector('.js-feedback-button');
   let formFeedback = document.querySelector('.js-feedback-form');
   buttonFeedback.addEventListener('click', () => {
-    formFeedback.classList.add('-show-flex');
+    formFeedback.classList.add('js-show-flex');
   });
 })

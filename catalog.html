@@ -125,9 +125,9 @@
                   <label class="catalog-filter__title" for="sort">Сортировка:</label>
                   <div class="select-wrapper">
                     <select class="filter filter--select" id="sort">
-                      <option>По популярности</option>
-                      <option>По возрастанию цены</option>
-                      <option>По убыванию цены</option>
+                      <option name="popular">По популярности</option>
+                      <option name="ascending-price">По возрастанию цены</option>
+                      <option name="descending-price">По убыванию цены</option>
                     </select>
                   </div>
                 </li>
@@ -136,12 +136,13 @@
                     <legend class="visually-hidden">Цена</legend>
                     <div class="catalog-filter__range range">
                       <div class="range__wrapper-inputs">
-                        <label class="catalog-filter__label catalog-filter__title">
+                        <label class="catalog-filter__label">
                           <span>Цена:</span>
                           <input class="range__input" type="number" value="100" name="min-price">
                           ₽<span class="visually-hidden">рублей</span>
                         </label>
-                        <label class="catalog-filter__label catalog-filter__title">
+                        <span>–</span>
+                        <label class="catalog-filter__label">
                           <input class="range__input" type="number" value="500" name="max-price">
                           ₽<span class="visually-hidden">рублей</span>
                         </label>
@@ -166,7 +167,7 @@
                     <legend class="catalog-filter__title">Жирность:</legend>
                     <ul class="filter filter--radio">
                       <li>
-                        <input class="visually-hidden control-input" type="radio" name="richness" id="richness-0" value="0">
+                        <input class="visually-hidden control-input" type="radio" name="richness" id="richness-0" value="0" checked>
                         <label class="control" for="richness-0">
                           <span class="control-mark"></span>
                           <span class="control-label">0%</span>

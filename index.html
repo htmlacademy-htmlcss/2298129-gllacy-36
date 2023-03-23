@@ -93,7 +93,7 @@
               </svg>
             </button>
             <div class="modal-block basket-goods">
-              <h3 class="title title--3 basket-goods__title">Корзина</h3>
+              <h3 class="title title--3--accent basket-goods__title">Корзина</h3>
               <ul class="basket-goods__goods">
                 <li class="basket-goods__good">
                   <img class="img" src="img/goods/ice-cream-raspberries.jpg" width="46" height="46" alt="Пломбир с малиновым джемом">
@@ -102,7 +102,7 @@
                     <p class="basket-goods__description">1 кг х 310 ₽<span class="visually-hidden">рублей</span></p>
                   </div>
                   <p class="basket-goods__price">310 ₽<span class="visually-hidden">рублей</span></p>
-                  <button class="basket-goods__delete icon-unset" type="button"></button>
+                  <button class="basket-goods__delete icon-delete" type="button"></button>
                 </li>
                 <li class="basket-goods__good">
                   <img class="img" src="img/goods/ice-cream-bubble-gum.jpg" width="46" height="46" alt="Ванильный пломбир со сладкой посыпкой">
@@ -110,8 +110,8 @@
                     <h4 class="basket-goods__good-title title title--4">Бабл-гам</h4>
                     <p class="basket-goods__description">1,5 кг х 320 ₽<span class="visually-hidden">рублей</span></p>
                   </div>
-                  <p class="basket-goods__price">310 ₽<span class="visually-hidden">рублей</span></p>
-                  <button class="basket-goods__delete icon-unset" type="button"></button>
+                  <p class="basket-goods__price">480 ₽<span class="visually-hidden">рублей</span></p>
+                  <button class="basket-goods__delete icon-delete" type="button"></button>
                 </li>
               </ul>
               <div class="basket-goods__order-block">
@@ -426,21 +426,6 @@
               </div>
             </dl>
             <button class="button button--second js-feedback-button" type="button">Форма обратной связи</button>
-            <form class="form form--feedback feedback-form js-feedback-form" method="post" action="https://echo.htmlacademy.ru/">
-              <h3 class="feedback-form__description title title--3--light">
-                Мы обязательно ответим вам!
-              </h3>
-              <label class="visually-hidden" for="feedback-name">Имя и фамилия</label>
-              <input type="text" class="feedback-form__input-date input" id="feedback-name" placeholder="Имя и фамилия" required>
-              <label class="visually-hidden" for="feedback-email">Почта</label>
-              <input type="email" class="feedback-form__input-date input" id="feedback-email" placeholder="email@example.com" required>
-              <label class="visually-hidden" for="feedback-comment">Комментарий</label>
-              <textarea class="feedback-form__textarea input" id="feedback-comment" rows="7" placeholder="В свободной форме"></textarea>
-              <input type="submit" class="feedback-form__button button button--second" value="Отправить">
-              <button class="feedback-form__close-button button icon-close" type="button">
-                <span class="visually-hidden">Закрыть окно</span>
-              </button>
-            </form>
           </article>
         </div>
       </section>
@@ -500,6 +485,23 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container js-feedback-form">
+      <form class="form form--feedback feedback-form" method="post" action="https://echo.htmlacademy.ru/">
+        <h3 class="feedback-form__description title title--3--light">
+          Мы обязательно ответим вам!
+        </h3>
+        <label class="visually-hidden" for="feedback-name">Имя и фамилия</label>
+        <input type="text" class="feedback-form__input-date input" id="feedback-name" name="name" placeholder="Имя и фамилия" required>
+        <label class="visually-hidden" for="feedback-email">Почта</label>
+        <input type="email" class="feedback-form__input-date input" id="feedback-email" name="email" placeholder="email@example.com" required>
+        <label class="visually-hidden" for="feedback-comment">Комментарий</label>
+        <textarea class="feedback-form__textarea input" id="feedback-comment" name="comment" rows="7" placeholder="В свободной форме"></textarea>
+        <input type="submit" class="feedback-form__button button button--second" value="Отправить">
+        <button class="feedback-form__close-button button icon-close" type="button">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
