@@ -1398,7 +1398,7 @@ body {
 }
 
 .form--feedback::before {
-  content: '';
+  content: "";
 }
 
 .form--subscribe::before {
